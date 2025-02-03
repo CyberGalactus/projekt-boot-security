@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Admin Page</title>
 </head>
 <body>
-
+<ul>
+    <li th:each="doc : ${documents}">
+        <strong th:text="${doc.title}"></strong>: <span th:text="${doc.description}"></span>
+    </li>
+</ul>
 </body>
 </html>

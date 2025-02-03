@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+<div align="center">
+    <h1>Registrering</h1>
+    <form action="#" th:action="@{/register}" method="post" th:object="${appUser}">
+        <label>Användarnamn:</label>
+        <input type="text" th:field="*{username}" /><br/>
+
+        <label>Lösenord:</label>
+        <input type="password" th:field="*{password}" /><br/>
+
+        <button type="submit">Registrera</button>
+    </form>
+    </form>
+</div>
+</body>
+</html>
